@@ -33,4 +33,5 @@ Host someinternalhost
 # Команда подключения к хосту за bastion через alias:
 ssh someinternalhost
 
-bastion_IP=62.84.117.242 someinternalhost_IP=10.128.0.35
+bastion_IP = 62.84.117.242
+someinternalhost_IP = 10.128.0.35

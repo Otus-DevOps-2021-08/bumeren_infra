@@ -35,3 +35,17 @@ ssh someinternalhost
 
 bastion_IP = 62.84.117.242
 someinternalhost_IP = 10.128.0.35
+
+# cloud-testapp
+testapp_IP = 62.84.117.173
+testapp_port = 9292
+
+# Команда на создание VM c установленными и запущенными приложениями в обладе yandex.cloud
+yc compute instance create \
+  --name reddit-app-autosetup \
+  --hostname reddit-app-autosetup \
+  --memory=4 \
+  --create-boot-disk image-folder-id=standard-images,image-family=ubuntu-1604-lts,size=10GB \
+  --network-interface subnet-name=default-ru-central1-a,nat-ip-version=ipv4 \
+  --metadata serial-port-enable=1 \
+  --metadata-from-file user-data=./metadata.yaml

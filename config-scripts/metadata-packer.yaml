@@ -1,0 +1,10 @@
+#yandex cloud config
+users:
+  - name: appuser
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCxuvG8x7V+Gd4Q+YsNVkLjAIKoKgQVZSK2mxR9VOqGXXuaNGkL6er4cWI82mDFx9s/aP4uoRGCSgmpGgbctSz96OoKNtAUGciNXXj9E0t1UaanZc/lXMki0e4t0la8Xsg7Iwnkec/HPP44zCipq7cnYFIQJSsrhRvYg3dhV7zzW6U88tHNR/1WBTXHhlpJxLVId2Xgwo7rjapqFOrpTtSM6mpjdjvhXLJ0d1KDws1t00efiwonx0QM+2t5kGt1n+R+fCdaT1UDs7sI9lvCnNmSInq+dgaFpMojWCSD37gwrVWEOKLkBiZatbbMXAQ5aIDtmdx6EqaY2GIrBvy/H6w+Hx9a8avOBw0Dlat0r7DP9WtUXLPEONSpXpSXN2b01iKbckX+hMuZbg/0xxEe/HDRtSPvnVBxAtem+MQMSPhNqfI/R/sWLwvUXDSk5hP0E1Qdds5ICfgMd/jemR8PL4IJUb2TEiDZq/QODwkrpdsC+t2TGp32D6gmiJyPf9ewIfs= appuser
+runcmd:
+# pass

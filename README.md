@@ -56,7 +56,6 @@ yc compute instance create \
 # создание файла шаблона packer (ubuntu16.json)
 # cоздание скриптов для provisioners
 # проверка валидности и сборка образа по шаблону ubuntu16.json
-cd packer
 packer validate -var-file variables.json ubuntu16.json
 packer build -var-file variables.json ubuntu16.json
 # создание VM:

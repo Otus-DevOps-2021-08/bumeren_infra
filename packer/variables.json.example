@@ -5,5 +5,4 @@
       "instance_cores": "2",
       "instance_mem_gb": "2",
       "preemptible": "true"
-  }
 }

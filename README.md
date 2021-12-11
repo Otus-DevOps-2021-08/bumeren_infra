@@ -49,3 +49,15 @@ yc compute instance create \
   --network-interface subnet-name=default-ru-central1-a,nat-ip-version=ipv4 \
   --metadata serial-port-enable=1 \
   --metadata-from-file user-data=./metadata.yaml
+# Сборка образов VM при помощи packer
+# создание сервисного аккаунта для packer в yandex.cloud (account yc-service)
+# делегирование прав сервисному аккаунту для packer (editor - role)
+# создание service account key file (key.json)
+# создание файла шаблона packer (ubuntu16.json)
+# cоздание скриптов для provisioners
+# проверка валидности и сборка образа по шаблону ubuntu16.json
+packer validate -var-file variables.json ubuntu16.json
+packer build -var-file variables.json ubuntu16.json
+# создание VM:
+cd config-scripts
+./create-reddit-vm.sh

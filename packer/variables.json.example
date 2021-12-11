@@ -1,0 +1,8 @@
+{
+      "folder_id": "aiiadjfiajf652v4numm3",
+      "source_image_id": "apdd80r5gr4dhatiijfda",
+      "path_to_file": "key.json.example",
+      "instance_cores": "2",
+      "instance_mem_gb": "2",
+      "preemptible": "true"
+}
